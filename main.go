@@ -6,7 +6,6 @@ import (
 	"fmt"
 	"sync"
 	"time"
-
 	// "strconv"
 	// Not a built-in package thus need to explicitely mention module and package name
 	"bookingApp/helper"
@@ -16,9 +15,7 @@ import (
 
 // Package level variables
 var confName = "Go Conference"
-
 const confTickets = 50
-
 var remainingTickets uint = 50
 var bookings = make([]UserData, 0)
 
@@ -168,7 +165,7 @@ func sendTicket(userTickets uint, firstName string, lastName string, email strin
 
 /** Go Uses "Green Thread", which is an abstraction of an actual thread (OS thread) -> Go Roautine
     We can create thousands of thread instead of worrying about low level OS thread
-	Advantages: Cheaper, light weight, less memory space without affecting application performance
-	Channels in Golang - Built-in functionality for Go routines to communicate with each other
-	Java uses OS thread that needs more memory space
+    Advantages: Cheaper, light weight, less memory space without affecting application performance
+    Channels in Golang - Built-in functionality for Go routines to communicate with each other
+    Java uses OS thread that needs more memory space
 */
