@@ -166,7 +166,7 @@ func sendTicket(userTickets uint, firstName string, lastName string, email strin
   Fix: creating a wait group. Now, main thread has to wait for a definite no. wait group before termination
 */
 
-/** Go Uses "Green Thread", which is an abstraction of an actual thread (OS thread) -> Go Roautine
+/** Go Uses "Green Thread", which is an abstraction of an actual thread (OS thread) -> Go Routine
     We can create thousands of thread instead of worrying about low level OS thread
 	Advantages: Cheaper, light weight, less memory space without affecting application performance
 	Channels in Golang - Built-in functionality for Go routines to communicate with each other
